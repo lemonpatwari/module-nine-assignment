@@ -14,8 +14,9 @@ export default createRouter({
             component: () => import('./pages/CategoryWiseBlog.vue'),
         },
         {
-            path: '/about',
-            component: () => import('./pages/About.vue'),
+            path: '/blog-details/:blogId',
+            name:'blog-details',
+            component: () => import('./pages/BlogDetails.vue'),
         },
     ],
 })
